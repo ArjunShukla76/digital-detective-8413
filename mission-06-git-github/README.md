@@ -25,7 +25,7 @@ I worked on the `update-about` branch and will stage only the Mission 6 files fo
 ## 7. Evidence / files
 - Root `README.md` with the About section
 - This mission README and glossary
-- Pull request: add the link after creating it
+- Pull request #1: merged into `main`
 
 ## 8. Commit details
 Commit message: Complete Git and GitHub collaboration mission
