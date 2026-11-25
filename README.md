@@ -16,3 +16,7 @@ The Digital Detective is a practice assignment about computers, programming, num
 - [Mission 8: Final Report](mission-08-final-report/)
 
 Each mission was completed and committed separately.
+
+## Run the number converter
+
+From the repository folder, run `cd mission-05-numbers-data`, then `python3 number_converter.py`. Enter a non-negative whole number when prompted. The program displays it in decimal, binary, octal, and hexadecimal.
