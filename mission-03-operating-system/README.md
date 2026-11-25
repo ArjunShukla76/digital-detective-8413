@@ -1,29 +1,57 @@
-# Mission 3: Understand the operating system
+# Mission 3: Understand the Operating System
 
-## Task 3.1
+## 1. Task / objective
+Learn what an operating system does and review system information, processes, paths, file permissions, and operating system responsibilities.
+
+## 2. Work completed
+
+### Task 3.1: System information
 | Information | What it tells you | Observation |
 |---|---|---|
-| OS / system details | Which OS, version and kernel the computer runs | macOS [version from sw_vers], Darwin, [arm64 or x86_64] |
+| Operating system | OS and version | macOS 26.5 |
+| Architecture | Processor architecture | arm64 |
 | Current account | Which user account is logged in | [redacted] |
-| Storage | Total, used and free disk space | Size [x], Used [x], Available [x] |
-| System activity | Snapshot of CPU, memory and busiest processes | CPU [x]% in use |
+| Storage on `/` | Total, used, and available space | 460Gi total, 19Gi used, 319Gi available; 6% capacity used |
+| System activity | Snapshot of processor activity | 3.26% user, 9.5% system, 87.68% idle |
 
-## Task 3.2
-- Process: a program that is currently running.
-- PID: a unique number the OS gives each running process so it can identify and manage it.
-- Two examples: launchd (1923, background system process) and Terminal (TextEdit).
+### Task 3.2: Processes and PIDs
+A process is a program that is running. A PID is the number the operating system assigns to identify a process. Examples of processes include `launchd`, a background system process, and Terminal, an application.
 
-## Task 3.3
-- Absolute path: full path from the root /, works from anywhere. Example: /Users/[redacted]/digital-detective-8413/mission-02-terminal
-- Relative path: path from where I am now. Example: mission-02-terminal/terminal-practice
-- notes.txt permissions are -rw-r--r--. The owner has rw-, so the owner can read and write but not execute.
+### Task 3.3: Paths and permissions
+- An absolute path starts at the root `/` and describes the full location. Example: `/Users/[redacted]/digital-detective-8413/mission-02-terminal`.
+- A relative path describes a location from the current folder. Example: `mission-02-terminal/terminal-practice`.
+- The `notes.txt` permissions were `-rw-r--r--`. The owner can read and write the file; group members and others can read it.
 
-## Task 3.4
+### Task 3.4: Operating system responsibilities
 | Responsibility | Explanation | Example |
 |---|---|---|
-| Process management | Decides which programs run and for how long | Brave and Spotify running together |
-| Memory management | Gives each program its own RAM and keeps them separate | One app crashing doesn't freeze others |
-| Device management | Controls hardware through drivers | Keyboard input appearing on screen |
-| File management | Organises how files are stored and found | Folders in Finder |
-| User interface / shell | How I interact with the computer | Desktop and Terminal |
-| Security and permissions | Controls who can read, write or run what | The rw- letters on a file
+| Process management | Schedules programs and shares processor time | Running a browser and music player at the same time |
+| Memory management | Allocates memory to programs | Keeping applications running without overwriting each other's memory |
+| Device management | Coordinates communication with hardware | Sending keyboard input to an application |
+| File management | Organizes files and folders | Finding documents through Finder |
+| User interface / shell | Lets users interact with the computer | Desktop, Finder, and Terminal |
+| Security and permissions | Controls access to files and system resources | File read and write permissions |
+
+## 3. Commands / tools used
+- `sw_vers -productVersion`
+- `uname -m`
+- `df -h /`
+- `top -l 1 -n 0 | head -n 8`
+- Terminal
+
+## 4. My understanding
+The operating system manages programs, memory, devices, files, user interaction, and permissions. Processes are running programs, and a PID identifies each process. Absolute paths begin at `/`; relative paths depend on the current folder.
+
+## 5. Difficulties faced
+I needed to interpret the storage and CPU output and distinguish absolute paths from relative paths.
+
+## 6. How I resolved them
+I used the system information commands to check the values and compared how each path is written.
+
+## 7. Evidence / files
+- `README.md` with system information, process and path notes, permissions, and operating system responsibilities
+- Account name: [redacted]
+
+## 8. Commit details
+- Original mission commit message: `Document operating system and file management`
+- Correction commit message: `Complete operating system mission details`
