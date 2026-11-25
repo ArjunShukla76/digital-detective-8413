@@ -1,7 +1,9 @@
 # The Digital Detective
 
 (S&AI Diwali Assignment)
+## About
 
+The Digital Detective is a practice assignment about computers, programming, number systems, Git and GitHub, and networking. This repository organizes the work into separate mission folders.
 ## Mission Index
 - [Mission 0: Setup](mission-00-setup/)
 - [Mission 1: Computer Basics](mission-01-computer-basics/)
